@@ -168,7 +168,7 @@ a:hover{ text-decoration:none;}
 .history cite small{ font-size:14px;font-family: 'paragonmedium'; text-transform:capitalize;}
 
 /* Facilites */
-.facilites{ background:url(../images/facility-bg.jpg) no-repeat; background-size:100% 100%; padding:75px 0 0; float: left; 
+.facilites{ background:url(../images/why-bg-2.jpg) no-repeat; background-size:100% 100%; padding:0; float: left; 
 width: 100%;}
 .facilites h2{ color:#07a4eb; font-size:38px; margin:0; text-transform:uppercase;  text-align:center;}
 .facilites h2 b{font-family:'paragonblack'; font-weight:normal}
@@ -402,17 +402,50 @@ text-align: left; padding: 2px 9px; border:1px solid #fff;}
     border: none;
     box-shadow: none;
 }
-.slideFx ul.slideMenu li > button{
-    background: #07a4eb;
-    color: #Fff;
-    padding: 10px 40px;
-    width: 30%;
-    border: none;
-    min-width: 286px;
+.slideFx ul.slideMenu{
+    margin-top: 20px;
+}
+.slideFx ul.slideMenu li{
+    margin-bottom: 20px;
+        text-align: center;
+}
+.slideFx ul.slideMenu li > button {
+    background: url(../images/bg.png) repeat;
+    width: 200px;
+    height: 38px;
+  display:inline-block;
+      font-family: 'paragonblack';
+    font-size: 20px;
+    letter-spacing: 1px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #07526e;
+  padding-top:6px;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  cursor:pointer;
+  border: none;
+  background-image: linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  border-radius: 5px;
+      box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #41819e, 0px 10px 5px #999;
+    outline: none;
+}
+.slideFx ul.slideMenu li > button:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
+}
+.slideFx ul.slideMenu li > button:active:before {
+  top: 7px;
+  font-size: 50px;
+  text-shadow: 0px 3px 0px #07526e, 0px 5px 1px #07526e/*, 3px 0px 1px #07526e, 3px 3px 1px #07526e,
+     -2px 0px 1px #68cff2*/;
 }
 .slideFx .slideCtxt{
     position: relative;
-    background: #fff;
 }
 
 /*Media Query*/
@@ -456,7 +489,15 @@ margin-left: 117px;}.header .navbar-nav > li.bookOnline a{  padding-left: 12px !
 @media (max-width:320px){.accomdation-caption, .ourRooms .carousel-caption{ padding: 23px;}}
 
 /* Custom styles*/
-.tr_header{  background: url(../images/why-bg.jpg); padding: 60px 0; background-size: cover; }
+.tripify_header{
+    background: url(../images/why-bg.jpg);
+    width: 100%;
+    float: left;
+}
+.tripify_header .logo img{
+    margin-left: 20px;
+}
+.tr_header{   padding: 60px 0; background-size: cover; }
 .centered { width: 100%; display: block; }
 .centered > div { width: 365px; margin: 10px auto; text-align: center; }
 .btn-3 {     background: #07a4eb; color: #ffffff; padding: 9px 8px; font-size: 23px; margin-bottom: 20px; line-height: 20px; }
@@ -481,4 +522,52 @@ margin-left: 117px;}.header .navbar-nav > li.bookOnline a{  padding-left: 12px !
 }
 .login-btns .dropdown > a.btn-register{
     background-image: url(../images/register.png)
+}
+.container .jumbotron, .container-fluid .jumbotron{
+    background: transparent;
+}
+.facilites h2.pick {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fdcc4b;
+    text-transform: none;
+}
+.passenger-selection {
+    max-width: 400px;
+    margin: 0 auto 50px auto;
+}
+.passenger-selection .form-group input{
+    background: rgba(255, 255, 255, 0.45);
+    border-width: 2px;
+    border-color: #fff;
+}
+.facilites h2.color-y {
+    color: #fdcc4b;
+    font-size: 30px;
+    text-transform: none;
+}
+.passenger-selection label{
+    font-family: 'paragonblack';
+    font-weight: normal;
+    font-size: 15px;
+    color: #07a4eb;
+}
+.facilites .timeline-container h2 {
+    font-size: 20px;
+    text-align:left;
+    line-height: 35px;
+    transition: 0.2s;
+}
+.facilites .timeline-container h2:hover{
+    font-size: 22px;
+}
+.facilites .timeline-item .widget-main {
+    font-family: 'paragonblack';
+    font-size: 14px;
+    color: #41819e;
+    padding: 10px;
+}
+.facilites .timeline-item .widget-box {
+    margin: 0;
+    display: inline-block;
 }

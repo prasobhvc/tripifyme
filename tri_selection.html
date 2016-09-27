@@ -6,9 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 <meta name="format-detection" content="telephone=no" />
 <link rel="shortcut icon" href="images/favicon.png">
-<title>Home</title>
+<title>Selection</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="admin/assets/css/ace.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker3.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
 <link rel="stylesheet" type="text/css" href="css/initcarousel.css">
@@ -26,142 +27,223 @@
 
 </head>
 <body>
-<div class="header">
-  <div class="container">
-    <nav class="navbar navbar-default">
-      <div class="logoHeader"><a class="logo" href="index.html"><img src="images/logo.png" alt=""/></a></div>
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-            <li class="dropdown bookOnline login">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-			<ul id="login-dp" class="dropdown-menu">
-				<li>
-					 <div class="row">
-							<div class="col-md-12">
-								Login via
-								<div class="social-buttons">
-									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-								</div>
-                                or
-								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
-											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required="">
-										</div>
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required="">
-                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-										</div>
-										<div class="form-group">
-											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-										</div>
-										<div class="checkbox">
-											 <label>
-											 <input type="checkbox"> keep me logged-in
-											 </label>
-										</div>
-								 </form>
-							</div>
-							<div class="bottom text-center">
-								New here ? <a href="#"><b>Join Us</b></a>
-							</div>
-					 </div>
-				</li>
-			</ul>
-        </li>
-        <li class="dropdown bookOnline signup">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Signup</b></a>
-        </li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </nav>
-    <div class="welcomeCol">
-      <div class="bottomCol">
-        <div class="welcome col-md-12">
-          <h1><b>EXPLORE DESTINATIONS</b> </h1>
-          </div>
-          
-      </div>
+<!-- Rooms -->
+<div class="tripify_header">
+  <div class="container-fluid">
+    <div class="tr_header">
+        <div class="head-elements">
+            <div><a href="index.html" class="logo"><img src="images/logo.png" alt=""/></a></div>
+        </div>
     </div>
   </div>
 </div>
 <!-- Facilites -->
 <div class="facilites">
   <div class="container">
-    <h2>HOTEL <b>FACILITIES</b></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+          <div class="passenger-selection">
+              <div class="row">
+                  <h2 class="pick">Pick <b>GUEST</b></h2>
+                      <div class="col-sm-6">
+                           <div class="form-group">
+                              <label class="control-label">Adult</label>
+                              <input id="after" class="form-control" type="number" value="1" min="1" />
+                           </div>
+                      </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                  <label class="control-label pull-right">Children (6-12 years)</label>
+                                  <input id="after" class="form-control" type="number" value="0" min="0" />
+                           </div>
+                      </div>
+          </div>
+	</div>
+    <h2 class="color-y">Pick <b>DESTINATION</b></h2>
     <div class="slideFx">
         <ul class="slideMenu">
-            <li id="ker" class="btn btn-default"><button>Kerala</button></li>
-            <li id="raj" class="btn btn-default"><button>Rajasthan</button></li>
-            <li id="him" class="btn btn-default"><button>Himachal</button></li>
+            <li id="ker"><button><span>Kerala</span></button></li>
+            <li id="raj"><button><span>Rajasthan</span></button></li>
+            <li id="him"><button><span>Himachal</span></button></li>
         </ul>
         <div class="slideCtxt">
             <div id="ker_pkg" class="loc_pkg">
+			     <div id="timeline-kerala">
+									<div class="row">
+										<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+											<div class="timeline-container">
+												<div class="timeline-label">
+												</div>
 
-                <section id="cd-timeline">
-                    <div class="cd-timeline-block">
-                        <div class="cd-timeline-img">
-                            <img src="img/cd-icon-picture.svg" alt="Picture">
-                        </div> <!-- cd-timeline-img -->
+												<div class="timeline-items">
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-suitcase btn btn-success no-hover"></i>
+														</div>
 
-                        <div class="cd-timeline-content">
-                            <h2>Title of section 1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                            <a href="#0" class="cd-read-more">Read more</a>
-                            <span class="cd-date">Jan 14</span>
-                        </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-                    <div class="cd-timeline-block">
-                        <div class="cd-timeline-img">
-                            <img src="img/cd-icon-picture.svg" alt="Picture">
-                        </div> <!-- cd-timeline-img -->
+														<h2>Tour packages</h2>
+                                                        <div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main">
+																	Description
+																</div>
+															</div>
+														</div>
+													</div>
+                                                    
+                                                    <div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-ship btn btn-success no-hover"></i>
+														</div>
 
-                        <div class="cd-timeline-content">
-                            <h2>Title of section 1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                            <a href="#0" class="cd-read-more">Read more</a>
-                            <span class="cd-date">Jan 14</span>
-                        </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-                    <div class="cd-timeline-block">
-                        <div class="cd-timeline-img">
-                            <img src="img/cd-icon-picture.svg" alt="Picture">
-                        </div> <!-- cd-timeline-img -->
+														<h2>House Boats</h2>
+                                                        <div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main">
+																	Description
+																</div>
+															</div>
+														</div>
+													</div>
+                                                    
+                                                    <div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-automobile btn btn-success no-hover"></i>
+														</div>
 
-                        <div class="cd-timeline-content">
-                            <h2>Title of section 1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                            <a href="#0" class="cd-read-more">Read more</a>
-                            <span class="cd-date">Jan 14</span>
-                        </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-                    <div class="cd-timeline-block">
-                        <div class="cd-timeline-img">
-                            <img src="img/cd-icon-picture.svg" alt="Picture">
-                        </div> <!-- cd-timeline-img -->
-
-                        <div class="cd-timeline-content">
-                            <h2>Title of section 1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                            <a href="#0" class="cd-read-more">Read more</a>
-                            <span class="cd-date">Jan 14</span>
-                        </div> <!-- cd-timeline-content -->
-                    </div> <!-- cd-timeline-block -->
-
-                    <div class="cd-timeline-block">
-                        <!-- ... -->
-                    </div>
-                </section>
+														<h2>Vehicles</h2>
+                                                        <div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main">
+																	Description
+																</div>
+															</div>
+														</div>
+													</div>
+												</div><!-- /.timeline-items -->
+											</div><!-- /.timeline-container -->
+										</div>
+									</div>
+								</div>
             </div>
-            <div id="raj_pkg" class="loc_pkg">Rajasthan</div>
-            <div id="him_pkg" class="loc_pkg">Himachal</div>
+            <div id="raj_pkg" class="loc_pkg">
+			     <div id="timeline-rajasthan">
+									<div class="row">
+										<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+											<div class="timeline-container">
+												<div class="timeline-label">
+												</div>
+
+												<div class="timeline-items">
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-suitcase btn btn-success no-hover"></i>
+														</div>
+
+														<h2>Tour packages</h2>
+                                                        <div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main">
+																	Description
+																</div>
+															</div>
+														</div>
+													</div>
+                                                    
+                                                    <div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-ship btn btn-success no-hover"></i>
+														</div>
+
+														<h2>House Boats</h2>
+                                                        <div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main">
+																	Description
+																</div>
+															</div>
+														</div>
+													</div>
+                                                    
+                                                    <div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-automobile btn btn-success no-hover"></i>
+														</div>
+
+														<h2>Vehicles</h2>
+                                                        <div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main">
+																	Description
+																</div>
+															</div>
+														</div>
+													</div>
+												</div><!-- /.timeline-items -->
+											</div><!-- /.timeline-container -->
+										</div>
+									</div>
+								</div>
+            </div>
+            <div id="him_pkg" class="loc_pkg">
+            
+			     <div id="timeline-himachal">
+									<div class="row">
+										<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+											<div class="timeline-container">
+												<div class="timeline-label">
+												</div>
+
+												<div class="timeline-items">
+													<div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-suitcase btn btn-success no-hover"></i>
+														</div>
+
+														<h2>Tour packages</h2>
+                                                        <div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main">
+																	Description
+																</div>
+															</div>
+														</div>
+													</div>
+                                                    
+                                                    <div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-ship btn btn-success no-hover"></i>
+														</div>
+
+														<h2>House Boats</h2>
+                                                        <div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main">
+																	Description
+																</div>
+															</div>
+														</div>
+													</div>
+                                                    
+                                                    <div class="timeline-item clearfix">
+														<div class="timeline-info">
+															<i class="timeline-indicator ace-icon fa fa-automobile btn btn-success no-hover"></i>
+														</div>
+
+														<h2>Vehicles</h2>
+                                                        <div class="widget-box transparent">
+															<div class="widget-body">
+																<div class="widget-main">
+																	Description
+																</div>
+															</div>
+														</div>
+													</div>
+												</div><!-- /.timeline-items -->
+											</div><!-- /.timeline-container -->
+										</div>
+									</div>
+								</div>
+            </div>
         </div>
     </div>
     
@@ -194,6 +276,8 @@
 <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
 <!-- Theme Custom -->
 <script type="text/javascript" src="js/custom.js"></script> 
+<!-- Number input -->
+<script type="text/javascript" src="js/bootstrap-number-input.js"></script>
 
 </body>
 </html>
