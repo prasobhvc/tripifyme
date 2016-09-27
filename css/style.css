@@ -158,7 +158,7 @@ a:hover{ text-decoration:none;}
 .whySlider{ background:url(../images/why-bg-2.jpg); background-size:cover;}
 
 /* History */
-.history{ float:left; width:100%; background:url(../images/historyimg.png) no-repeat; background-size:100% 100%; color:#fff;    padding: 7.2% 0 0;}
+.history{ float:left; width:100%; background:url(../images/historyimg.png) no-repeat; background-size: 100% 100%; color: #fff; padding: 20px !important; float: left; margin-top: 20px; border-radius: 20px;  margin-bottom: 20px; }
 .history h2{margin:0 0 17px 0;; font-size:38px;font-family: 'paragonmedium'; text-transform:uppercase;}
 .history h2 b{ margin:0; font-size:38px;font-family:'paragonblack'; font-weight:normal;}
 .history p{ font-size:15px; line-height:28px; letter-spacing:0.5px; margin:0 0 57px 0;}
@@ -179,18 +179,18 @@ width: 100%;}
 .faciltybtn a:hover{ background:#fde428; color:#2d4e5d;}
 
 /*Rooms*/
-.ourRooms{ float:left; width:100%;padding:75px 0;}
+.ourRooms{ float:left; width:100%;}
 .ourRooms h2{ color:#07a4eb; font-size:38px; margin:0; text-transform:uppercase;  text-align:center;}
 .ourRooms h2 b{font-family:'paragonblack'; font-weight:normal}
 .ourRooms p{ font-size:14px; color:#666666; margin-top:25px; text-align:center;letter-spacing: 1px; margin-bottom:0;}
 
 /*Rooms carousel slider*/
-.ourRooms .carousel-inner{ margin-top:60px;}
+.ourRooms .carousel-inner{}
 .ourRooms .carousel-inner .item::before{border: 22px solid rgba(255, 255, 255, 0.42);content: "";left: 0;right: 0;bottom: 0;top: 0;position: absolute;opacity: 1;z-index: 9;}
 .ourRooms .carousel-inner .item img{ width:100%;}
-.ourRooms .carousel-caption {background: rgba(253, 228, 40, 0.83); right:22px; width:45%;padding:74px 50px; text-align:left !important; bottom:22px;}
+.ourRooms .carousel-caption {background: transparent; right:22px; width:60%;padding:74px 50px; text-align:left !important; top:22px;}
 .ourRooms .carousel-caption h2{ color:#2d4e5d; font-size:38px;text-transform:uppercase;text-align: left;}
-.ourRooms .carousel-caption h2 b{font-family:'paragonblack'; font-weight:normal;}
+.ourRooms .carousel-caption h2 b{font-family:'paragonblack'; font-weight:normal; color: #fff; font-size: 1.3em; letter-spacing: 10px; }
 .ourRooms .carousel-caption .bg-warning {  background-color: #faf0b1; float: left; margin-top: 15px; padding: 5px 16px; 
 color: #323a45;font-family: 'Open Sans', sans-serif; font-size:13px;margin-bottom: 30px;}
 .ratings { float: left; width: 100%;margin-bottom: 30px;}
@@ -442,7 +442,7 @@ margin-left: 117px;}.header .navbar-nav > li.bookOnline a{  padding-left: 12px !
 @media (min-width:641px) and (max-width:761px) {.accomdation-caption { padding: 21px 21px; width: 60%;}.ourRooms.accomdations .accomdationCol h2 { font-size: 23px;}.ourRooms.accomdations .accomdationCol .bg-warning { margin-bottom: 4px;margin-top: 4px;}.ratings { margin-bottom: 3px;}}
 
 @media (max-width:640px){#amazingcarousel-6 .amazingcarousel-description{font: 14px/20px "paragonmedium";}#amazingcarousel-6 .amazingcarousel-title{font: 20px "paragonblack";}#amazingcarousel-6 .amazingcarousel-text{ padding: 2%;}.hand img {top: 265px;
- width: 100%;}.yellow-logo{ margin-top: -53px;}.hand{ display:none;}.history .col-md-7.col-xs-7 { width: 100%;}.faciltybtn a{ padding: 17px 23px 10px;}.checkForm .form{width: 68%;}.ourRooms .carousel-caption .bg-warning{ display:none;}.ourRooms .carousel-caption{padding: 26px 25px;}.ourRooms .carousel-caption{ width: 60%;}.ratings { margin-bottom: 25px;}.roomFaclity { padding: 9px 11px;}.header.innerHeader { background-size: 100% 100%;height: 370px; position: relative;}.aboutMan{height: 366px;}.aboutHistory p{ margin:0;}.accomdation-caption{ padding:29px 25px; width: 60%;}.ourRooms.accomdations .accomdationCol h2{ font-size: 20px;}.ourRooms.accomdations .accomdationCol .bg-warning {display: none;}.wrapper{ height:242px;}}
+ width: 100%;}.yellow-logo{ margin-top: -53px;}.hand{ display:none;}.history .col-md-7.col-xs-7 { width: 100%;}.faciltybtn a{ padding: 17px 23px 10px;}.checkForm .form{width: 68%;}.ourRooms .carousel-caption{padding: 26px 25px;}.ourRooms .carousel-caption{ width: 73%;}.ratings { margin-bottom: 25px;}.roomFaclity { padding: 9px 11px;}.header.innerHeader { background-size: 100% 100%;height: 370px; position: relative;}.aboutMan{height: 366px;}.aboutHistory p{ margin:0;}.accomdation-caption{ padding:29px 25px; width: 60%;}.ourRooms.accomdations .accomdationCol h2{ font-size: 20px;}.ourRooms.accomdations .accomdationCol .bg-warning {display: none;}.wrapper{ height:242px;}.ourRooms .carousel-caption .bg-warning{font-size: 9px;}}
  
  
 
@@ -454,3 +454,31 @@ margin-left: 117px;}.header .navbar-nav > li.bookOnline a{  padding-left: 12px !
 
 @media (max-width:360px){.accomdation-caption , .ourRooms .carousel-caption{ padding:35.4px 23px;}}
 @media (max-width:320px){.accomdation-caption, .ourRooms .carousel-caption{ padding: 23px;}}
+
+/* Custom styles*/
+.tr_header{  background: url(../images/why-bg.jpg); padding: 60px 0; background-size: cover; }
+.centered { width: 100%; display: block; }
+.centered > div { width: 365px; margin: 10px auto; text-align: center; }
+.btn-3 {     background: #07a4eb; color: #ffffff; padding: 9px 8px; font-size: 23px; margin-bottom: 20px; line-height: 20px; }
+.btn.btn-3:focus, .btn.btn-3:hover{ color: #fff; }
+#navbar {
+    width: 322px;
+    margin: 30px auto 0 auto;
+}
+.login-btns .dropdown > a{
+    background: transparent;
+    color: #fff;
+    border: none;
+    width: 126px;
+    height: 47px;
+    outline: none;
+    margin: 10px;
+    text-indent: 40px;
+    font-size: 19px;
+}
+.login-btns .dropdown > a.btn-login{
+    background-image: url(../images/login.png);
+}
+.login-btns .dropdown > a.btn-register{
+    background-image: url(../images/register.png)
+}
