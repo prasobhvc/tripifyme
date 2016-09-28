@@ -80,8 +80,19 @@ a:hover{ text-decoration:none;}
 :-moz-placeholder { /* Firefox 18- */
   color: #95a2b2;opacity:1;
 }
-
-
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.width-100{
+    width: 100% !important;
+}
+.margin-50{
+    margin-top: 50px !important;
+}
+.hide-block{
+    visibility: hidden;
+}
 /*Header Navigation*/
 .header{ background:url(../images/location/headerBanner.jpg) no-repeat; background-size:cover; height:auto; position:relative;}
 .header div#navbar { padding: 0 1%; z-index:999; padding-right:0; }
@@ -526,11 +537,12 @@ margin-left: 117px;}.header .navbar-nav > li.bookOnline a{  padding-left: 12px !
 .container .jumbotron, .container-fluid .jumbotron{
     background: transparent;
 }
-.facilites h2.pick {
+h2.pick {
     font-size: 28px;
     margin-bottom: 20px;
     color: #fdcc4b;
     text-transform: none;
+        text-align: center;
 }
 .passenger-selection {
     max-width: 400px;
@@ -541,10 +553,12 @@ margin-left: 117px;}.header .navbar-nav > li.bookOnline a{  padding-left: 12px !
     border-width: 2px;
     border-color: #fff;
 }
-.facilites h2.color-y {
+h2.color-y {
+    font-size: 28px;
+    margin-bottom: 20px;
     color: #fdcc4b;
-    font-size: 30px;
     text-transform: none;
+    text-align: center;
 }
 .passenger-selection label{
     font-family: 'paragonblack';
@@ -570,4 +584,35 @@ margin-left: 117px;}.header .navbar-nav > li.bookOnline a{  padding-left: 12px !
 .facilites .timeline-item .widget-box {
     margin: 0;
     display: inline-block;
+}
+.two-sided-btns{
+    width: 314px;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15em;
+}
+.two-sided-btns > button{
+        background: #fff;
+        border: none;
+    padding: 3px 20px;
+    font-size: 20px;
+    font-family: 'paragonblack';
+    width: 155px;
+    outline: none;
+    box-shadow: 0 1px 5px #dadada;
+}
+.two-sided-btns > button.active,
+.two-sided-btns > button:hover{
+    background: #07a4eb;
+    color: #fff;
+}
+.facilites .check-in #dropdownMenu1{
+        background-color: #07a4eb!important;
+    border-color: #07a4eb;
+    border-radius: 5px;
+    font-family: 'paragonblack';
+    font-size: 19px;
 }
