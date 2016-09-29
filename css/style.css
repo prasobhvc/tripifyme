@@ -85,7 +85,16 @@ a:hover{ text-decoration:none;}
     margin: 0 auto;
 }
 .width-100{
+    min-width: 50px;
     width: 100% !important;
+}
+.width-50{
+    min-width: 50px;
+    width: 50% !important;
+}
+.width-25{
+    min-width: 50px;
+    width: 25% !important;
 }
 .margin-50{
     margin-top: 50px !important;
@@ -93,6 +102,17 @@ a:hover{ text-decoration:none;}
 .hide-block{
     visibility: hidden;
 }
+.blue-white,
+.btn-default.blue-white:focus:hover, .btn-default.blue-white:hover{
+    background-color: #07a4eb!important;
+    border-color: #07a4eb;
+    padding: 1px 20px;
+    font-family: 'paragonblack';
+    font-size: 19px;
+    color: #fff;
+    outline: none;
+}
+
 /*Header Navigation*/
 .header{ background:url(../images/location/headerBanner.jpg) no-repeat; background-size:cover; height:auto; position:relative;}
 .header div#navbar { padding: 0 1%; z-index:999; padding-right:0; }
@@ -612,7 +632,79 @@ h2.color-y {
 .facilites .check-in #dropdownMenu1{
         background-color: #07a4eb!important;
     border-color: #07a4eb;
-    border-radius: 5px;
+        padding: 1px 20px;
     font-family: 'paragonblack';
     font-size: 19px;
+}
+.facilites .checkInfo .form-control {
+    padding: 12px;
+    border: none;
+    background-color: #fff;
+    -webkit-border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+    height: 40px;
+        font-family: 'paragonblack';
+}
+.facilites .checkInfo .input-group-addon{
+        width: 50px;
+    background: #fff;
+}
+.facilites .dropdown-menu {
+    top: 40px;
+        border: 1px solid #fff;
+    box-shadow: 1px 1px 1px rgb(90, 182, 224);
+}
+.facilites .night-halt h2{
+    font-size: 25px;
+}
+
+/*======= On-Off button====*/
+.section input[type="checkbox"]{
+    display: none;
+}
+.onoff {
+    position: absolute;
+    top: 37px;
+}
+.onoff label {
+    position: relative;
+    font-family: 'paragonblack';
+    font-weight: normal;
+    color: #fdcc4b;
+    font-size: 28px;
+}
+.onoff span::before,
+.onoff span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.onoff span.checkbox::before {
+    width: 27px;
+    height: 27px;
+    background-color: #fff;
+    left: -35px;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    transition: border-color .2s;
+}
+.onoff span.checkbox::before,
+.onoff span.checkbox:hover::before {
+    border: 3px solid #fdcc4b;
+}
+.onoff span.checkbox::after {
+    content: '\f00c';
+    font-size: 22px;
+    font-family: 'FontAwesome';
+    left: -33px;
+    top: 5px;
+    color: transparent;
+    transition: color .2s;
+}
+.onoff input[type="checkbox"]:checked + label span.checkbox::after {
+    color: #07a4eb;
 }

@@ -15,10 +15,12 @@
 <link rel="stylesheet" type="text/css" href="css/initcarousel.css">
 <!-- Custom Style -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/megadropdown.css">
+<link rel="stylesheet" type="text/css" href="css/megadropdown.css">
 <link rel="stylesheet" type="text/css" href="css/timelinestyle.css">
 <!-- Font-Awesome Icons Style -->
 <link rel="stylesheet" href="Font-Awesome/css/font-awesome.css"/>
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" href="css/styleScoller.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -50,9 +52,18 @@
         <div class="col-lg-3 col-centered check-in">
         <h2 class="color-y">Pick <b>CHECK-IN PLACE</b></h2>
         <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle width-100" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <button class="btn btn-default dropdown-toggle width-50 pull-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Check in City
   </button>
+           
+            <div class="checkInfo width-50">
+                <div class="form-group" id="sandbox-container">
+                  <div class="input-group date">
+                    <input type="text" class="form-control" placeholder="Arrival Date">
+                    <span class="input-group-addon"><img src="images/cal.png" alt="" /></span> 
+               </div>
+                </div> 
+            </div>
   <nav class="dropdown-menu" aria-labelledby="dropdownMenu1">
     
 		<ul class="mcd-menu">
@@ -93,225 +104,193 @@
 </div>
         </div>
     </div>
-    <div class="row">
-    <div class="container">
+    <div class="row margin-50">
+        <div class="col-lg-3 col-centered night-halt">
+        <h2 class="color-y">Pick place for <b>NIGHT HALT</b></h2>
+        <div class="dropdown">
+  <button class="btn btn-default width-100 blue-white" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Night 1 halt
+  </button>
+  <nav class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <!-- content -->
+			<div id="content-3" class="content">
+				<ul class="mcd-menu">
+			<li>
+				<a href="">
+                    <strong>KOCHI</strong>
+                    <i class="fa fa-plane"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+			<li>
+				<a href="">
+                    <strong>MUNNAR</strong>
+                    <i class="fa fa-plane"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+            <li>
+				<a href="">
+                    <strong>ALEPPEY</strong>
+                    <i class="fa fa-plane"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+            <li>
+				<a href="">
+                    <strong>KOTTAYAM</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+                    <li>
+				<a href="">
+                    <strong>ATHIRAPALLY</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+                    <li>
+				<a href="">
+                    <strong>CHERAI</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+                    <li>
+				<a href="">
+                    <strong>KOVALAM</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+                    <li>
+				<a href="">
+                    <strong>THEKKADI</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+                    <li>
+				<a href="">
+                    <strong>GAVI</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+                        <!--<ul>
+					<li><a href="#"><i class="fa fa-globe"></i>Mission</a></li>
+					<li>
+						<a href="#"><i class="fa fa-group"></i>Our Team</a>
+						<ul>
+							<li><a href="#"><i class="fa fa-female"></i>Leyla Sparks</a></li>
+							<li>
+								<a href="#"><i class="fa fa-male"></i>Gleb Ismailov</a>
+								<ul>
+									<li><a href="#"><i class="fa fa-leaf"></i>About</a></li>
+									<li><a href="#"><i class="fa fa-tasks"></i>Skills</a></li>
+								</ul>
+							</li>
+							<li><a href="#"><i class="fa fa-female"></i>Viktoria Gibbers</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="fa fa-trophy"></i>Rewards</a></li>
+					<li><a href="#"><i class="fa fa-certificate"></i>Certificates</a></li>
+				</ul>-->
+			</li>   
+		</ul>
+			</div>
+  </nav>
 </div>
-    </div>
-  <div class="container">
-      <div class="row">
-          
-      </div>
-        <div class="row">
-          <div class="passenger-selection">
-              
-                  </div>
-                  
-                  <h2 class="pick">Pick <b>GUEST</b></h2>
-                      <div class="col-sm-6">
-                           <div class="form-group">
-                              <label class="control-label">Adult</label>
-                              <input id="after" class="form-control" type="number" value="1" min="1" />
-                           </div>
-                      </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                  <label class="control-label pull-right">Children (6-12 years)</label>
-                                  <input id="after" class="form-control" type="number" value="0" min="0" />
-                           </div>
-                      </div>
-          </div>
-	</div>
-    <h2 class="color-y">Pick <b>DESTINATION</b></h2>
-    <div class="slideFx">
-        <ul class="slideMenu">
-            <li id="ker"><button><span>Kerala</span></button></li>
-            <li id="raj"><button><span>Rajasthan</span></button></li>
-            <li id="him"><button><span>Himachal</span></button></li>
-        </ul>
-        <div class="slideCtxt">
-            <div id="ker_pkg" class="loc_pkg">
-			     <div id="timeline-kerala">
-									<div class="row">
-										<div class="col-xs-12 col-sm-10 col-sm-offset-1">
-											<div class="timeline-container">
-												<div class="timeline-label">
-												</div>
-
-												<div class="timeline-items">
-													<div class="timeline-item clearfix">
-														<div class="timeline-info">
-															<i class="timeline-indicator ace-icon fa fa-suitcase btn btn-success no-hover"></i>
-														</div>
-
-														<h2>Tour packages</h2>
-                                                        <div class="widget-box transparent">
-															<div class="widget-body">
-																<div class="widget-main">
-																	Description
-																</div>
-															</div>
-														</div>
-													</div>
-                                                    
-                                                    <div class="timeline-item clearfix">
-														<div class="timeline-info">
-															<i class="timeline-indicator ace-icon fa fa-ship btn btn-success no-hover"></i>
-														</div>
-
-														<h2>House Boats</h2>
-                                                        <div class="widget-box transparent">
-															<div class="widget-body">
-																<div class="widget-main">
-																	Description
-																</div>
-															</div>
-														</div>
-													</div>
-                                                    
-                                                    <div class="timeline-item clearfix">
-														<div class="timeline-info">
-															<i class="timeline-indicator ace-icon fa fa-automobile btn btn-success no-hover"></i>
-														</div>
-
-														<h2>Vehicles</h2>
-                                                        <div class="widget-box transparent">
-															<div class="widget-body">
-																<div class="widget-main">
-																	Description
-																</div>
-															</div>
-														</div>
-													</div>
-												</div><!-- /.timeline-items -->
-											</div><!-- /.timeline-container -->
-										</div>
-									</div>
-								</div>
-            </div>
-            <div id="raj_pkg" class="loc_pkg">
-			     <div id="timeline-rajasthan">
-									<div class="row">
-										<div class="col-xs-12 col-sm-10 col-sm-offset-1">
-											<div class="timeline-container">
-												<div class="timeline-label">
-												</div>
-
-												<div class="timeline-items">
-													<div class="timeline-item clearfix">
-														<div class="timeline-info">
-															<i class="timeline-indicator ace-icon fa fa-suitcase btn btn-success no-hover"></i>
-														</div>
-
-														<h2>Tour packages</h2>
-                                                        <div class="widget-box transparent">
-															<div class="widget-body">
-																<div class="widget-main">
-																	Description
-																</div>
-															</div>
-														</div>
-													</div>
-                                                    
-                                                    <div class="timeline-item clearfix">
-														<div class="timeline-info">
-															<i class="timeline-indicator ace-icon fa fa-ship btn btn-success no-hover"></i>
-														</div>
-
-														<h2>House Boats</h2>
-                                                        <div class="widget-box transparent">
-															<div class="widget-body">
-																<div class="widget-main">
-																	Description
-																</div>
-															</div>
-														</div>
-													</div>
-                                                    
-                                                    <div class="timeline-item clearfix">
-														<div class="timeline-info">
-															<i class="timeline-indicator ace-icon fa fa-automobile btn btn-success no-hover"></i>
-														</div>
-
-														<h2>Vehicles</h2>
-                                                        <div class="widget-box transparent">
-															<div class="widget-body">
-																<div class="widget-main">
-																	Description
-																</div>
-															</div>
-														</div>
-													</div>
-												</div><!-- /.timeline-items -->
-											</div><!-- /.timeline-container -->
-										</div>
-									</div>
-								</div>
-            </div>
-            <div id="him_pkg" class="loc_pkg">
-            
-			     <div id="timeline-himachal">
-									<div class="row">
-										<div class="col-xs-12 col-sm-10 col-sm-offset-1">
-											<div class="timeline-container">
-												<div class="timeline-label">
-												</div>
-
-												<div class="timeline-items">
-													<div class="timeline-item clearfix">
-														<div class="timeline-info">
-															<i class="timeline-indicator ace-icon fa fa-suitcase btn btn-success no-hover"></i>
-														</div>
-
-														<h2>Tour packages</h2>
-                                                        <div class="widget-box transparent">
-															<div class="widget-body">
-																<div class="widget-main">
-																	Description
-																</div>
-															</div>
-														</div>
-													</div>
-                                                    
-                                                    <div class="timeline-item clearfix">
-														<div class="timeline-info">
-															<i class="timeline-indicator ace-icon fa fa-ship btn btn-success no-hover"></i>
-														</div>
-
-														<h2>House Boats</h2>
-                                                        <div class="widget-box transparent">
-															<div class="widget-body">
-																<div class="widget-main">
-																	Description
-																</div>
-															</div>
-														</div>
-													</div>
-                                                    
-                                                    <div class="timeline-item clearfix">
-														<div class="timeline-info">
-															<i class="timeline-indicator ace-icon fa fa-automobile btn btn-success no-hover"></i>
-														</div>
-
-														<h2>Vehicles</h2>
-                                                        <div class="widget-box transparent">
-															<div class="widget-body">
-																<div class="widget-main">
-																	Description
-																</div>
-															</div>
-														</div>
-													</div>
-												</div><!-- /.timeline-items -->
-											</div><!-- /.timeline-container -->
-										</div>
-									</div>
-								</div>
-            </div>
         </div>
     </div>
-    
+    <div class="row margin-50">
+        <div class="col-lg-7 col-centered check-in">
+            <h2 class="color-y">Pick <b>sightseeing route in Munnar</b></h2>
+            <div>
+                <div class="col-xs-2">
+                    <section id="first" class="section">
+                        <div class="onoff">
+                          <input type="checkbox" name="option1" id="checkbox-3">
+                          <label for="checkbox-3"><span class="checkbox">Option 1</span></label>
+                        </div>
+                    </section>
+                </div>
+                    <div class="col-xs-10">
+                        <div id="content-6" class="scroll-content content horizontal-images">
+                            <ul>
+                                <li><img src="images/img3.jpg" /></li>
+                                <li><img src="images/img4.jpg" /></li>
+                                <li><img src="images/img5.jpg" /></li>
+                                <li><img src="images/img6.jpg" /></li>
+                                <li><img src="images/img7.jpg" /></li>
+                                <li><img src="images/img1.jpg" /></li>
+                                <li><img src="images/img2.jpg" /></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-centered check-in">
+            <div>
+                <div class="col-xs-2">
+                    <section id="first" class="section">
+                        <div class="onoff">
+                          <input type="checkbox" name="option2" id="checkbox-3">
+                          <label for="checkbox-3"><span class="checkbox">Option 2</span></label>
+                        </div>
+                    </section>
+                </div>
+                    <div class="col-xs-10">
+                        <div id="content-6" class="scroll-content content horizontal-images">
+                            <ul>
+                                <li><img src="images/img3.jpg" /></li>
+                                <li><img src="images/img4.jpg" /></li>
+                                <li><img src="images/img5.jpg" /></li>
+                                <li><img src="images/img6.jpg" /></li>
+                                <li><img src="images/img7.jpg" /></li>
+                                <li><img src="images/img1.jpg" /></li>
+                                <li><img src="images/img2.jpg" /></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-centered check-in">
+            <div>
+                <div class="col-xs-2">
+                    <section id="first" class="section">
+                        <div class="onoff">
+                          <input type="checkbox" name="option3" id="checkbox-3">
+                          <label for="checkbox-3"><span class="checkbox">Option 3</span></label>
+                        </div>
+                    </section>
+                </div>
+                    <div class="col-xs-10">
+                        <div id="content-6" class="scroll-content content horizontal-images">
+                            <ul>
+                                <li><img src="images/img3.jpg" /></li>
+                                <li><img src="images/img4.jpg" /></li>
+                                <li><img src="images/img5.jpg" /></li>
+                                <li><img src="images/img6.jpg" /></li>
+                                <li><img src="images/img7.jpg" /></li>
+                                <li><img src="images/img1.jpg" /></li>
+                                <li><img src="images/img2.jpg" /></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div> 
   </div>
-</div>
 <!-- Rooms -->
 <!-- Aboutus History -->
 
@@ -341,6 +320,23 @@
 <script type="text/javascript" src="js/custom.js"></script> 
 <!-- Number input -->
 <script type="text/javascript" src="js/bootstrap-number-input.js"></script>
-
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+		(function($){
+			$(window).on("load",function(){
+				
+				$("#content-3").mCustomScrollbar({
+					scrollButtons:{enable:true},
+					theme:"light-thick",
+					scrollbarPosition:"outside"
+				});
+                $(".scroll-content").mCustomScrollbar({
+					axis:"x",
+					theme:"light-3",
+					advanced:{autoExpandHorizontalScroll:true}
+				});
+			});
+		})(jQuery);
+	</script>
 </body>
 </html>
