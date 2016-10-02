@@ -112,7 +112,16 @@ a:hover{ text-decoration:none;}
     color: #fff;
     outline: none;
 }
-
+.dark-red,
+.btn-default.dark-red:focus:hover, .btn-default.dark-red:hover{
+    background-color: #fff !important;
+    border-color: #fff;
+    padding: 1px 20px;
+    font-family: 'paragonblack';
+    font-size: 19px;
+    color: #f30d0d !important;
+    outline: none;
+}
 /*Header Navigation*/
 .header{ background:url(../images/location/headerBanner.jpg) no-repeat; background-size:cover; height:auto; position:relative;}
 .header div#navbar { padding: 0 1%; z-index:999; padding-right:0; }
@@ -199,8 +208,7 @@ a:hover{ text-decoration:none;}
 .history cite small{ font-size:14px;font-family: 'paragonmedium'; text-transform:capitalize;}
 
 /* Facilites */
-.facilites{ background:url(../images/why-bg-2.jpg) no-repeat; background-size:100% 100%; padding:0; float: left; 
-width: 100%;}
+.facilites{ background:url(../images/why-bg-2.jpg) no-repeat; background-size:100% 100%; padding:0; float: left; width: 100%; padding-bottom: 20px;}
 .facilites h2{ color:#07a4eb; font-size:38px; margin:0; text-transform:uppercase;  text-align:center;}
 .facilites h2 b{font-family:'paragonblack'; font-weight:normal}
 .facilites p{ font-size:14px; color:#666666; margin-top:25px; text-align:center;letter-spacing: 1px; margin-bottom:0;}
@@ -707,4 +715,8 @@ h2.color-y {
 }
 .onoff input[type="checkbox"]:checked + label span.checkbox::after {
     color: #07a4eb;
+}
+.checkout button.btn{
+    box-shadow: 0 0px 4px #b3aeae !important;
+    margin-bottom: 50px;
 }

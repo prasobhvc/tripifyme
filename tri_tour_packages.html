@@ -290,6 +290,117 @@
             </div>
         </div>
     </div> 
+    <div class="row margin-50">
+        <div class="col-lg-3 col-centered checkout">
+        <h2 class="color-y">2nd <b>NIGHT HALT</b></h2>
+        <div class="dropdown">
+  <button class="btn btn-default width-50 blue-white pull-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Night 1 halt
+  </button>
+  <button class="btn btn-default width-50 dark-red pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Checkout place
+  </button>          
+  <nav class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <!-- content -->
+			<div id="content-4" class="content">
+				<ul class="mcd-menu">
+			<li>
+				<a href="">
+                    <strong>KOCHI</strong>
+                    <i class="fa fa-plane"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+			<li>
+				<a href="">
+                    <strong>MUNNAR</strong>
+                    <i class="fa fa-plane"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+            <li>
+				<a href="">
+                    <strong>ALEPPEY</strong>
+                    <i class="fa fa-plane"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+            <li>
+				<a href="">
+                    <strong>KOTTAYAM</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+                    <li>
+				<a href="">
+                    <strong>ATHIRAPALLY</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+                    <li>
+				<a href="">
+                    <strong>CHERAI</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+                    <li>
+				<a href="">
+                    <strong>KOVALAM</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+                    <li>
+				<a href="">
+                    <strong>THEKKADI</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+			</li>
+                    <li>
+				<a href="">
+                    <strong>GAVI</strong>
+                    <i class="fa fa-plane hide-block"></i>
+					<i class="fa fa-subway"></i>
+                    <i class="fa fa-bus"></i>
+				</a>
+                        <!--<ul>
+					<li><a href="#"><i class="fa fa-globe"></i>Mission</a></li>
+					<li>
+						<a href="#"><i class="fa fa-group"></i>Our Team</a>
+						<ul>
+							<li><a href="#"><i class="fa fa-female"></i>Leyla Sparks</a></li>
+							<li>
+								<a href="#"><i class="fa fa-male"></i>Gleb Ismailov</a>
+								<ul>
+									<li><a href="#"><i class="fa fa-leaf"></i>About</a></li>
+									<li><a href="#"><i class="fa fa-tasks"></i>Skills</a></li>
+								</ul>
+							</li>
+							<li><a href="#"><i class="fa fa-female"></i>Viktoria Gibbers</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="fa fa-trophy"></i>Rewards</a></li>
+					<li><a href="#"><i class="fa fa-certificate"></i>Certificates</a></li>
+				</ul>-->
+			</li>   
+		</ul>
+			</div>
+  </nav>
+</div>
+        </div>
+    </div>
   </div>
 <!-- Rooms -->
 <!-- Aboutus History -->
@@ -326,6 +437,11 @@
 			$(window).on("load",function(){
 				
 				$("#content-3").mCustomScrollbar({
+					scrollButtons:{enable:true},
+					theme:"light-thick",
+					scrollbarPosition:"outside"
+				});
+                $("#content-4").mCustomScrollbar({
 					scrollButtons:{enable:true},
 					theme:"light-thick",
 					scrollbarPosition:"outside"
