@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
         <meta name="format-detection" content="telephone=no" />
         <link rel="shortcut icon" href="images/favicon.png">
-        <title>Hierarchy</title>
+        <title>Summary</title>
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker3.min.css">
@@ -26,217 +26,154 @@
         <script type="text/javascript" src="js/custom.js"></script>
     </head>
     <body>
-        <div class="header innerHeader">
-            <div class="container">
-                <nav class="navbar navbar-default">
-                    <div class="logoHeader"><a class="logo" href="index.html"><img src="images/logo.png" alt=""/></a></div>
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <div class="tripify_header summary">
+            <div class="container-fluid">
+                <div class="tr_header">
+                    <div class="head-elements">
+                        <div><a href="index.html" class="logo"><img src="images/logo.png" alt=""/></a></div>
                     </div>
-                    <!--/.nav-collapse --> 
-
-                </nav>
-            </div>
-        </div>
-
-        <div id="online-booking" class="welcomeCol">
-            <div class="bottomCol">
-                <div class="container">
-                    <div class="checkForm">
-                        <h4>ONLINE<br>
-                            <b>BOOKINg</b></h4>
-                        <div class="form">
-                            <div class="checkInfo">
-                                <div class="col-xs-6 col-md-6">
-                                    <div class="form-group" id="sandbox-container">
-                                        <div class="input-group  col-md-12">
-                                            <button type="button" class="btn btn-default dropdown-toggle col-md-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Select Accomodation type
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="number" class="form-control" placeholder="- Number Of Rooms -">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="checkInfo">
-                                <div class="col-xs-6 col-md-6">
-                                    <div class="form-group" id="sandbox-container">
-                                        <div class="input-group  col-md-12">
-                                            <button type="button" class="btn btn-default dropdown-toggle col-md-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Transportation type
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Sedan cars</a>
-                                                <a class="dropdown-item" href="#">SUV cars</a>
-                                                <a class="dropdown-item" href="#">MUV cars</a>
-                                                <a class="dropdown-item" href="#">Hachback cars</a>
-                                                <a class="dropdown-item" href="#">Jeep</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">House Boat</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-md-6">
-                                    <div class="form-group" id="sandbox-container">
-                                        <div class="input-group  col-md-12">
-                                            <button type="button" class="btn btn-default dropdown-toggle col-md-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Comfort type
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">AC</a>
-                                                <a class="dropdown-item" href="#">Non AC</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="checkInfo">
-                                <div class="col-xs-6 col-md-6">
-                                    <div class="form-group" id="sandbox-container">
-                                        <div class="input-group  col-md-12">
-                                            <button type="button" class="btn btn-default dropdown-toggle col-md-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Seats
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">12 Seat traveller</a>
-                                                <a class="dropdown-item" href="#">16 Seat traveller</a>
-                                                <a class="dropdown-item" href="#">21 Seat traveller</a>
-                                                <a class="dropdown-item" href="#">35 Seat bus</a>
-                                                <a class="dropdown-item" href="#">42 Seat bus</a>
-                                                <a class="dropdown-item" href="#">49 Seat bus</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Phone number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="checkInfo">
-                                <div class="col-xs-6 col-md-6">
-                                    <div class="form-group">
-                                        <select id="error" class="selectpicker form-control">
-                                            <option selected>- Number Of Rooms -</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-md-6">
-                                    <div class="form-group">
-                                        <button type="button" class="btn btn-default checkedAvail">Get Price</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="two-sided-btns">
+                        <h2 class="color-y">Your <b>TRIP SUMMARY</b></h2>
                     </div>
                 </div>
             </div>
-        </div>  
+
+        </div> 
         <!-- Main Blog -->
         <div class="Blogs mainBlog">
             <div class="container">
                 <div class="row">
                     <div class="homeBlogCol">
-                        <h2><b>DAY 1</b></h2>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="mainBlogCol"> <img src="images/blog1.jpg" alt="" class="img-responsive"/>
+                        <div class="col-md-2 col-sm-2">
+                            <h2><b>DAY 1</b></h2>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="mainBlogCol rig-cell"> 
                                 <div class="blogText">
-                                    <h4><b>KOCHI</b></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utionis </p>
-                                    <a class="btn btn-default" href="#">Check in place</a> </div>
+                                    <a class="btn btn-default" href="#">Check in place</a> 
+                                </div>
+                                <span>Kochi</span>
+                                <img src="images/planned-places/tile_1.jpg" alt="" class="img-responsive"/>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="mainBlogCol"> <img src="images/blog1.jpg" alt="" class="img-responsive"/>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="mainBlogCol rig-cell">
                                 <div class="blogText blueBox">
-                                    <h4><b>MUNNAR</b></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utionis </p>
-                                    <a class="btn btn-default" href="#">Night 1 Halt</a> </div>
+                                    <a class="btn btn-default" href="#">Night Halt</a> 
+                                </div>
+                                <span>Kochi</span>
+                                <img src="images/planned-places/tile_2.jpg" alt="" class="img-responsive"/>
                             </div>
                         </div>
                     </div>
-
                     <div class="homeBlogCol">
-                        <h2><b>DAY 2</b></h2>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="mainBlogCol"> <img src="images/blog1.jpg" alt="" class="img-responsive"/>
+                        <div class="col-md-2 col-sm-2">
+                            <h2><b>DAY 2</b></h2>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="mainBlogCol rig-cell"> 
                                 <div class="blogText">
-                                    <h4><b>MUNNAR</b></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utionis </p>
-                                    <a class="btn btn-default" href="#">Sight seeing</a> </div>
+                                    <a class="btn btn-default" href="#">Sight seeing</a> 
+                                </div>
+                                <span>Kochi</span>
+                                <img src="images/planned-places/tile_1.jpg" alt="" class="img-responsive"/>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="mainBlogCol"> <img src="images/blog1.jpg" alt="" class="img-responsive"/>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="mainBlogCol rig-cell">
                                 <div class="blogText blueBox">
-                                    <h4><b>MUNNAR</b></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utionis </p>
-                                    <a class="btn btn-default" href="#">Night 2 Halt</a> </div>
+                                    <a class="btn btn-default" href="#">Night Halt</a> 
+                                </div>
+                                <span>Kochi</span>
+                                <img src="images/planned-places/tile_2.jpg" alt="" class="img-responsive"/>
                             </div>
                         </div>
                     </div>
                     <div class="homeBlogCol">
-                        <h2><b>DAY 3</b></h2>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="mainBlogCol"> <img src="images/blog1.jpg" alt="" class="img-responsive"/>
-                                <div class="blogText  blueBox">
-                                    <h4><b>MUNNAR</b></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utionis </p>
-                                    <a class="btn btn-default" href="#">Sight seeing</a> </div>
+                        <div class="col-md-2 col-sm-2">
+                            <h2><b>DAY 3</b></h2>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="mainBlogCol rig-cell"> 
+                                <div class="blogText">
+                                    <a class="btn btn-default" href="#">Sight seeing</a> 
+                                </div>
+                                <span>Kochi</span>
+                                <img src="images/planned-places/tile_1.jpg" alt="" class="img-responsive"/>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="mainBlogCol"> <img src="images/blog1.jpg" alt="" class="img-responsive"/>
-                                <div class="blogText">
-                                    <h4><b>ALLEPEY</b></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utionis </p>
-                                    <a class="btn btn-default" href="#">Night 3 Halt</a> </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="mainBlogCol rig-cell">
+                                <div class="blogText blueBox">
+                                    <a class="btn btn-default" href="#">Night Halt</a> 
+                                </div>
+                                <span>Kochi</span>
+                                <img src="images/planned-places/tile_2.jpg" alt="" class="img-responsive"/>
                             </div>
                         </div>
                     </div>
                     <div class="homeBlogCol">
-                        <h2><b>DAY 4</b></h2>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="mainBlogCol"> <img src="images/blog1.jpg" alt="" class="img-responsive"/>
-                                <div class="blogText  blueBox">
-                                    <h4><b>ALLEPEY</b></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utionis </p>
-                                    <a class="btn btn-default" href="#">Sight seeing</a> </div>
+                        <div class="col-md-2 col-sm-2">
+                            <h2><b>DAY 4</b></h2>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="mainBlogCol rig-cell"> 
+                                <div class="blogText">
+                                    <a class="btn btn-default" href="#">Sight seeing</a> 
+                                </div>
+                                <span>Kochi</span>
+                                <img src="images/planned-places/tile_1.jpg" alt="" class="img-responsive"/>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="mainBlogCol"> <img src="images/blog1.jpg" alt="" class="img-responsive"/>
-                                <div class="blogText">
-                                    <h4><b>KOCHI</b></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utionis </p>
-                                    <a class="btn btn-default" href="#">Check out place</a> </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="mainBlogCol rig-cell">
+                                <div class="blogText blueBox">
+                                    <a class="btn btn-default" href="#">Check out place</a> 
+                                </div>
+                                <span>Kochi</span>
+                                <img src="images/planned-places/tile_2.jpg" alt="" class="img-responsive"/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row margin-50">
+            <div class="col-lg-6 col-centered checkout">
+                <div class="dropdown">
+                    <button class="btn btn-default width-50 blue-white pull-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Accomodation Type
+                    </button>
+                    <button class="btn btn-default width-50 dark-red pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Number of Rooms
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-50">
+            <div class="col-lg-6 col-centered checkout">
+                <div class="dropdown">
+                    <button class="btn btn-default width-50 blue-white pull-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        A/C
+                    </button>
+                    <button class="btn btn-default width-50 dark-red pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Non A/C
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="slideFx get-package">
+            <ul class="slideMenu">
+                <li id="ker"><button><span>Get Package price</span></button></li>
+            </ul>
         </div>
         <!-- copyright -->
         <div class="copyRight">
             <div class="container">
                 <div class="copyCol">
                     <p class="pull-left">&copy; 2016 <b>KINGDOM</b> All rights reserved.</p>
-                    <a class="pull-right" id="scrollup" href="javascript:void(0);"><i class="fa fa-angle-up" aria-hidden="true"></i> To Top</a> </div>
+                    <a class="pull-right" id="scrollup" href="javascript:void(0);"><i class="fa fa-angle-up" aria-hidden="true"></i> To Top</a> 
+                </div>
             </div>
         </div>
 
