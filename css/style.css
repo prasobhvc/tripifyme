@@ -105,6 +105,16 @@ a:hover{ text-decoration:none;}
 .hide-block{
     visibility: hidden;
 }
+.padding-all-0{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.padding-left-0{
+    padding-left: 0 !important;
+}
+.padding-right-0{
+    padding-right: 0 !important;
+}
 .blue-white,
 .btn-default.blue-white:focus:hover, .btn-default.blue-white:hover{
     background-color: #07a4eb!important;
@@ -125,6 +135,14 @@ a:hover{ text-decoration:none;}
     font-size: 19px;
     color: #ffffff !important;
     outline: none;
+}
+label.control-label{
+    font-family: 'paragonblack';
+    font-weight: normal;
+    color: #07a4eb;
+}
+.row {
+  margin-bottom: 2rem;
 }
 /*Header Navigation*/
 .header{ background:url(../images/location/headerBanner.jpg) no-repeat; background-size:cover; height:auto; position:relative;}
@@ -212,7 +230,7 @@ a:hover{ text-decoration:none;}
 .history cite small{ font-size:14px;font-family: 'paragonmedium'; text-transform:capitalize;}
 
 /* Facilites */
-.facilites{ background:url(../images/why-bg-2.jpg) no-repeat; background-size:100% 100%; padding:0; float: left; width: 100%; padding-bottom: 20px;}
+.facilites{ background:url(../images/why-bg-2.jpg) no-repeat; background-size:100% 100%; min-height: 400px; padding:0; float: left; width: 100%; padding-bottom: 20px;}
 .facilites h2{ color:#07a4eb; font-size:38px; margin:0; text-transform:uppercase;  text-align:center;}
 .facilites h2 b{font-family:'paragonblack'; font-weight:normal}
 .facilites p{ font-size:14px; color:#666666; margin-top:25px; text-align:center;letter-spacing: 1px; margin-bottom:0;}
@@ -868,4 +886,41 @@ span.or_block{
 .slideFx.get-package ul.slideMenu li > button{
     width: 300px;
     margin-bottom: 60px;
+}
+.house-boat-page .form-group{
+    margin-bottom: 10px;
+}
+.house-boat-page label.control-label{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+.house-boat-page input.dark-red{
+    border: none;
+    height: 39px;
+    font-weight: bold;
+    text-align: center;
+}
+.house-boat-page .get-quote{
+    margin-top: 8em;
+}
+.house-boat-page .get-quote .zoom-title > button{
+    transition: 0.5s;
+}
+.house-boat-page .get-quote .zoom-title > button:hover{
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 9px 12px;
+    font-family: 'paragonblack';
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.house-boat-page .get-quote .mcd-menu li a{
+    padding: 0px 20px;
+    height: 26px;
 }
